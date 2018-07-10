@@ -2,6 +2,7 @@
 /* Don't forget to link to this file in your HTML, otherwise your styles won't show up! */
 body {
   font-size: 12px;
+  font-family: 'Markazi Text', serif;
 }
 
 h1, h2 {
@@ -37,7 +38,23 @@ header {
   text-align: right;
 }
 
-#advanced-selectors li {
+#advanced-selectors ol li p {
   padding: 2px;
   background-color: grey;
+}
+
+#advanced-selectors ol li:nth-child(odd) p {
+  background-color: green;
+}
+
+a[title="Bitmaker"]:hover {
+  text-decoration: none;
+}
+
+#advanced-selectors ol ul li a:hover {
+  background-color: yellow;
+}
+
+#advanced-selectors ol ul li a:active {
+  background-color: red;
 }
